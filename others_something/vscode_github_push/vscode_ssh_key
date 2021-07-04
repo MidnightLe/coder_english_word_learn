@@ -1,0 +1,21 @@
+git shell
+
+
+git config --global user.name "YOUR_USERNAME"
+git config --global user.email "YOUR_EMAIL_ADDRESS"
+
+
+首先检查是否有任何键
+要检查您的 PC 上是否有任何现有的 SSH 密钥：
+
+ls -al ~/.ssh
+
+
+
+生成新的 SSH 密钥
+要创建新的 SSH 密钥，请运行以下命令替换您的 GitHub 电子邮件地址。
+ssh-keygen -t rsa -b 4096 -C "YOUR_GITHUB_EMAIL_ADDRESS"
+
+
+
+clip < ~/.ssh/id_rsa.pub
